@@ -1,0 +1,10 @@
+<table class="table">
+    <thead class="thead-dark">
+        <tr>
+            <th>State Names</th>
+        </tr>
+    </thead>
+    <tr *ngFor="let x of data | keyvalue">
+        <td (click)="send_state(x.key,x.value)">{{ x.key }}</td>
+    </tr>
+</table>

@@ -1,0 +1,11 @@
+td:hover{
+    color: white;
+    background-color:  #0d7377;
+    font-size: 24px;
+}
+td{
+    font-size: 16px;
+}
+th{
+    font-size: 25px;
+}

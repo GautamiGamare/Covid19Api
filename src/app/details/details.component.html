@@ -1,0 +1,12 @@
+<table class="table" *ngIf="cname">
+    <thead class="thead-dark">
+        <tr>
+            <th>{{ cname }}</th>
+        </tr>
+        <tr *ngFor="let x of cdata | keyvalue">
+            <td *ngIf="x.key != 'delta'">
+                {{ x.key }} : {{ x.value }}
+            </td>
+        </tr>
+    </thead>
+</table>

@@ -1,0 +1,12 @@
+<table class="table" *ngIf="sname">
+    <thead class="thead-dark">
+        <tr>
+            <th>{{ sname }}</th>
+        </tr>
+        <tr *ngFor="let x of sdata['districtData'] | keyvalue">
+            <td (click)="sendDetail(x.key,x.value)">
+                {{ x.key }}
+            </td>
+        </tr>
+    </thead>
+</table>
